@@ -1,4 +1,4 @@
-module CostFunction where
+module Week1.CostFunction where
 
 import System.Random
 
@@ -9,13 +9,13 @@ data Parameter = Parameter { t0 :: Double, t1 :: Double }
   deriving (Show)
 
 -- given 2 real number, returns a liniar function
-costFunction :: Parameter -> (Double -> Double)
-costFunction (Parameter t0 t1) = \x -> t0 + (t1 * x)
+hyp :: Parameter -> (Double -> Double)
+hyp (Parameter t0 t1) = \x -> t0 + (t1 * x)
 
 -- calcurate error of cost function using training sets.
 errorf :: Parameter -> [TrainingSet] -> Double
 errorf p ts = 
-  let h = costFunction p 
+  let h = hyp p 
   in (sum (map (\t -> ((h (x t)) - (y t))^2) ts)) / (2 * (fromIntegral (length ts)))
 
 -- iterative gradient descent until the difference from the previous gets less than th.
@@ -32,7 +32,7 @@ gradientDescent th a ts p = inGD p
 -- using fixed derivative function to get a slope.
 descentOne :: Double -> [TrainingSet] -> Parameter -> Parameter
 descentOne  a ts p@(Parameter t0 t1) = 
-  let h = costFunction p
+  let h = hyp p
       m = fromIntegral . length $ ts 
       ut0 = t0 - a * (sum (map (\t -> ((h (x t)) - (y t))) ts) / m)
       ut1 = t1 - a * (sum (map (\t -> ((h (x t)) - (y t)) * (x t)) ts)  / m)

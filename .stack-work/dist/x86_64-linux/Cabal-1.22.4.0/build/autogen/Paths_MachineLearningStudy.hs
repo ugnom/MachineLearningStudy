@@ -17,7 +17,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/ugnom/work/study/MachineLearningStudy/.stack-work/install/x86_64-linux/lts-3.8/7.10.2/bin"
-libdir     = "/home/ugnom/work/study/MachineLearningStudy/.stack-work/install/x86_64-linux/lts-3.8/7.10.2/lib/x86_64-linux-ghc-7.10.2/MachineLearningStudy-0.1.0.0-IgdYCFxeK377V4ARklXMim"
+libdir     = "/home/ugnom/work/study/MachineLearningStudy/.stack-work/install/x86_64-linux/lts-3.8/7.10.2/lib/x86_64-linux-ghc-7.10.2/MachineLearningStudy-0.1.0.0-CNwdqNQ21MrLKFQxwEedkV"
 datadir    = "/home/ugnom/work/study/MachineLearningStudy/.stack-work/install/x86_64-linux/lts-3.8/7.10.2/share/x86_64-linux-ghc-7.10.2/MachineLearningStudy-0.1.0.0"
 libexecdir = "/home/ugnom/work/study/MachineLearningStudy/.stack-work/install/x86_64-linux/lts-3.8/7.10.2/libexec"
 sysconfdir = "/home/ugnom/work/study/MachineLearningStudy/.stack-work/install/x86_64-linux/lts-3.8/7.10.2/etc"

@@ -1,0 +1,634 @@
+
+==================== FINAL INTERFACE ====================
+2016-02-17 01:56:35.915142 UTC
+
+interface Machi_CNwdqNQ21MrLKFQxwEedkV:Week1.CostFunction 7102
+  interface hash: 5ea49a316aacec4fda70355a0ffeb08e
+  ABI hash: 3e45526caa612dde48741b058242c8aa
+  export-list hash: 44ad90a9777889705ada5bf60fc28b7b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f1b05f1bd2060b726fbba5ff8982a4f0
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Week1.CostFunction.composeDataSets
+  Week1.CostFunction.costFunction
+  Week1.CostFunction.descentOne
+  Week1.CostFunction.errorf
+  Week1.CostFunction.f
+  Week1.CostFunction.gradientDescent
+  Week1.CostFunction.Parameter{Week1.CostFunction.Parameter Week1.CostFunction.t0 Week1.CostFunction.t1}
+  Week1.CostFunction.TrainingSet{Week1.CostFunction.TrainingSet Week1.CostFunction.x Week1.CostFunction.y}
+module dependencies:
+package dependencies: array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      base-4.8.1.0* deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+                      random-1.1@rando_1z8Ujelqc6aKgvPnbRUKkP*
+                      time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Format.Parse
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+import  -/  base-4.8.1.0:Data.Foldable 2e5acb797cfda6b3b7fabd7052abe290
+import  -/  base-4.8.1.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.List f31ed8784b3e05f1397195751f7d74ea
+import  -/  base-4.8.1.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.1.0:GHC.Real 4c3b525ecbd4d62bb287aec36d4c2f0d
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  random-1.1@rando_1z8Ujelqc6aKgvPnbRUKkP:System.Random 043afd3a72ee464fc1e36264f990a1de
+6fd3ea58bd3a00febdc9983ed8e3a483
+  $fShowParameter :: GHC.Show.Show Week1.CostFunction.Parameter
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Week1.CostFunction.Parameter
+                  Week1.CostFunction.$fShowParameter_$cshowsPrec
+                  Week1.CostFunction.$fShowParameter_$cshow
+                  Week1.CostFunction.$fShowParameter_$cshowList -}
+6fd3ea58bd3a00febdc9983ed8e3a483
+  $fShowParameter1 :: Week1.CostFunction.Parameter -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w :: Week1.CostFunction.Parameter ->
+                 case w of ww { Week1.CostFunction.Parameter ww1 ww2 ->
+                 Week1.CostFunction.$w$cshowsPrec 0 ww1 ww2 }) -}
+e614ba562e059bfb7fc18729bf0da1bc
+  $fShowParameter2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+5e2f86db6d22348972f209597ea992e3
+  $fShowParameter3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "t1 = "#) -}
+7cf7d7b989919572d1c6cc9bb9786f35
+  $fShowParameter4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+e1757bfe8d69a163a10393f4930ae1b4
+  $fShowParameter5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "t0 = "#) -}
+0c438a0341357a5c71996d78f12622ff
+  $fShowParameter6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Parameter {"#) -}
+bd7075a2953252d8749aa746bb1ebafd
+  $fShowParameter7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+6fd3ea58bd3a00febdc9983ed8e3a483
+  $fShowParameter_$cshow ::
+    Week1.CostFunction.Parameter -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U),1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x1 :: Week1.CostFunction.Parameter ->
+                 Week1.CostFunction.$fShowParameter_$cshowsPrec
+                   GHC.Show.shows18
+                   x1
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+6fd3ea58bd3a00febdc9983ed8e3a483
+  $fShowParameter_$cshowList ::
+    [Week1.CostFunction.Parameter] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Week1.CostFunction.Parameter
+                   Week1.CostFunction.$fShowParameter1) -}
+6fd3ea58bd3a00febdc9983ed8e3a483
+  $fShowParameter_$cshowsPrec ::
+    GHC.Types.Int -> Week1.CostFunction.Parameter -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: Week1.CostFunction.Parameter ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Week1.CostFunction.Parameter ww3 ww4 ->
+                 Week1.CostFunction.$w$cshowsPrec ww1 ww3 ww4 } }) -}
+e6634c681696154b65aaeed6259d0881
+  $fShowTrainingSet :: GHC.Show.Show Week1.CostFunction.TrainingSet
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Week1.CostFunction.TrainingSet
+                  Week1.CostFunction.$fShowTrainingSet_$cshowsPrec
+                  Week1.CostFunction.$fShowTrainingSet_$cshow
+                  Week1.CostFunction.$fShowTrainingSet_$cshowList -}
+e6634c681696154b65aaeed6259d0881
+  $fShowTrainingSet1 ::
+    Week1.CostFunction.TrainingSet -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w :: Week1.CostFunction.TrainingSet ->
+                 case w of ww { Week1.CostFunction.TrainingSet ww1 ww2 ->
+                 Week1.CostFunction.$w$cshowsPrec1 0 ww1 ww2 }) -}
+e523985d5a1803b973d625b5b2a4a50c
+  $fShowTrainingSet2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "y = "#) -}
+4071657f459cd4ebaeb81f93de961b37
+  $fShowTrainingSet3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "x = "#) -}
+ca3b29f22576fe75ebeef256beac5098
+  $fShowTrainingSet4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TrainingSet {"#) -}
+e6634c681696154b65aaeed6259d0881
+  $fShowTrainingSet_$cshow ::
+    Week1.CostFunction.TrainingSet -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U),1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x1 :: Week1.CostFunction.TrainingSet ->
+                 Week1.CostFunction.$fShowTrainingSet_$cshowsPrec
+                   GHC.Show.shows18
+                   x1
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e6634c681696154b65aaeed6259d0881
+  $fShowTrainingSet_$cshowList ::
+    [Week1.CostFunction.TrainingSet] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Week1.CostFunction.TrainingSet
+                   Week1.CostFunction.$fShowTrainingSet1) -}
+e6634c681696154b65aaeed6259d0881
+  $fShowTrainingSet_$cshowsPrec ::
+    GHC.Types.Int -> Week1.CostFunction.TrainingSet -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: Week1.CostFunction.TrainingSet ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Week1.CostFunction.TrainingSet ww3 ww4 ->
+                 Week1.CostFunction.$w$cshowsPrec1 ww1 ww3 ww4 } }) -}
+caf289bb02aaaf2c615ad0d206fc4a71
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Types.Double -> GHC.Types.Double -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U><L,1*U(U)><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Types.Double
+                   ww2 :: GHC.Types.Double ->
+                 let {
+                   f1 :: GHC.Base.String -> GHC.Base.String
+                   = case ww1 of ww3 { GHC.Types.D# ww4 ->
+                     GHC.Float.$w$sshowSignedFloat
+                       GHC.Float.$fShowDouble_$sshowFloat
+                       Week1.CostFunction.$fShowParameter7
+                       ww4 }
+                 } in
+                 let {
+                   f2 :: GHC.Base.String -> GHC.Base.String
+                   = case ww2 of ww3 { GHC.Types.D# ww4 ->
+                     GHC.Float.$w$sshowSignedFloat
+                       GHC.Float.$fShowDouble_$sshowFloat
+                       Week1.CostFunction.$fShowParameter7
+                       ww4 }
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x1 :: GHC.Base.String ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Week1.CostFunction.$fShowParameter6
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          Week1.CostFunction.$fShowParameter5
+                          (f1
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Week1.CostFunction.$fShowParameter4
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   Week1.CostFunction.$fShowParameter3
+                                   (f2
+                                      (GHC.Base.++
+                                         @ GHC.Types.Char
+                                         Week1.CostFunction.$fShowParameter2
+                                         x1))))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ x1 :: GHC.Base.String ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x1)) }) -}
+252a77c88754d157ead33c409161a74c
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> GHC.Types.Double -> GHC.Types.Double -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U><L,1*U(U)><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Types.Double
+                   ww2 :: GHC.Types.Double ->
+                 let {
+                   f1 :: GHC.Base.String -> GHC.Base.String
+                   = case ww1 of ww3 { GHC.Types.D# ww4 ->
+                     GHC.Float.$w$sshowSignedFloat
+                       GHC.Float.$fShowDouble_$sshowFloat
+                       Week1.CostFunction.$fShowParameter7
+                       ww4 }
+                 } in
+                 let {
+                   f2 :: GHC.Base.String -> GHC.Base.String
+                   = case ww2 of ww3 { GHC.Types.D# ww4 ->
+                     GHC.Float.$w$sshowSignedFloat
+                       GHC.Float.$fShowDouble_$sshowFloat
+                       Week1.CostFunction.$fShowParameter7
+                       ww4 }
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x1 :: GHC.Base.String ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Week1.CostFunction.$fShowTrainingSet4
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          Week1.CostFunction.$fShowTrainingSet3
+                          (f1
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Week1.CostFunction.$fShowParameter4
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   Week1.CostFunction.$fShowTrainingSet2
+                                   (f2
+                                      (GHC.Base.++
+                                         @ GHC.Types.Char
+                                         Week1.CostFunction.$fShowParameter2
+                                         x1))))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ x1 :: GHC.Base.String ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x1)) }) -}
+811a676fd5a45019164cc248667129aa
+  $wdescentOne ::
+    GHC.Types.Double
+    -> [Week1.CostFunction.TrainingSet]
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> (# GHC.Types.Double, GHC.Types.Double #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U)><L,U><L,U(U)><L,U(U)>, Inline: [0],
+     Unfolding: (\ w :: GHC.Types.Double
+                   w1 :: [Week1.CostFunction.TrainingSet]
+                   ww :: GHC.Types.Double
+                   ww1 :: GHC.Types.Double ->
+                 let {
+                   m :: GHC.Types.Double
+                   = case GHC.List.$wlenAcc
+                            @ Week1.CostFunction.TrainingSet
+                            w1
+                            0 of ww2 { DEFAULT ->
+                     GHC.Types.D# (GHC.Prim.int2Double# ww2) }
+                 } in
+                 (# case ww of wild { GHC.Types.D# x1 ->
+                    case w of wild1 { GHC.Types.D# x2 ->
+                    letrec {
+                      $wgo2 :: [Week1.CostFunction.TrainingSet]
+                               -> GHC.Prim.Double# -> GHC.Prim.Double#
+                        {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+                      = \ w2 :: [Week1.CostFunction.TrainingSet]
+                          ww2 :: GHC.Prim.Double# ->
+                        case w2 of wild2 {
+                          [] -> ww2
+                          : y1 ys
+                          -> case ww1 of wild3 { GHC.Types.D# x3 ->
+                             case y1 of wild4 { Week1.CostFunction.TrainingSet ds ds1 ->
+                             case ds of wild5 { GHC.Types.D# y2 ->
+                             case ds1 of wild6 { GHC.Types.D# y3 ->
+                             $wgo2
+                               ys
+                               (GHC.Prim.+##
+                                  ww2
+                                  (GHC.Prim.-##
+                                     (GHC.Prim.+## x1 (GHC.Prim.*## x3 y2))
+                                     y3)) } } } } }
+                    } in
+                    case $wgo2 w1 0.0 of ww2 { DEFAULT ->
+                    case m of wild2 { GHC.Types.D# y1 ->
+                    case GHC.Prim./## ww2 y1 of wild3 { DEFAULT ->
+                    GHC.Types.D# (GHC.Prim.-## x1 (GHC.Prim.*## x2 wild3)) } } } } },
+                    case ww1 of wild { GHC.Types.D# x1 ->
+                    case w of wild1 { GHC.Types.D# x2 ->
+                    letrec {
+                      $wgo2 :: [Week1.CostFunction.TrainingSet]
+                               -> GHC.Prim.Double# -> GHC.Prim.Double#
+                        {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+                      = \ w2 :: [Week1.CostFunction.TrainingSet]
+                          ww2 :: GHC.Prim.Double# ->
+                        case w2 of wild2 {
+                          [] -> ww2
+                          : y1 ys
+                          -> case ww of wild3 { GHC.Types.D# x3 ->
+                             case y1 of wild4 { Week1.CostFunction.TrainingSet ds ds1 ->
+                             case ds of wild5 { GHC.Types.D# y2 ->
+                             case ds1 of wild6 { GHC.Types.D# y3 ->
+                             $wgo2
+                               ys
+                               (GHC.Prim.+##
+                                  ww2
+                                  (GHC.Prim.*##
+                                     (GHC.Prim.-## (GHC.Prim.+## x3 (GHC.Prim.*## x1 y2)) y3)
+                                     y2)) } } } } }
+                    } in
+                    case $wgo2 w1 0.0 of ww2 { DEFAULT ->
+                    case m of wild2 { GHC.Types.D# y1 ->
+                    case GHC.Prim./## ww2 y1 of wild3 { DEFAULT ->
+                    GHC.Types.D#
+                      (GHC.Prim.-## x1 (GHC.Prim.*## x2 wild3)) } } } } } #)) -}
+72e9511d46a0d1fa791bdad5f1d99649
+  $werrorf ::
+    Week1.CostFunction.Parameter
+    -> [Week1.CostFunction.TrainingSet] -> GHC.Prim.Double#
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U(U),U(U))><S,U>,
+     Inline: [0],
+     Unfolding: (\ w :: Week1.CostFunction.Parameter
+                   w1 :: [Week1.CostFunction.TrainingSet] ->
+                 letrec {
+                   $wgo2 :: [Week1.CostFunction.TrainingSet]
+                            -> GHC.Prim.Double# -> GHC.Prim.Double#
+                     {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+                   = \ w2 :: [Week1.CostFunction.TrainingSet]
+                       ww :: GHC.Prim.Double# ->
+                     case w2 of wild {
+                       [] -> ww
+                       : y1 ys
+                       -> case w of wild1 { Week1.CostFunction.Parameter t2 t3 ->
+                          case t2 of wild2 { GHC.Types.D# x1 ->
+                          case t3 of wild3 { GHC.Types.D# x2 ->
+                          case y1 of wild4 { Week1.CostFunction.TrainingSet ds ds1 ->
+                          case ds of wild5 { GHC.Types.D# y2 ->
+                          case ds1 of wild6 { GHC.Types.D# y3 ->
+                          let {
+                            x3 :: GHC.Prim.Double#
+                            = GHC.Prim.-## (GHC.Prim.+## x1 (GHC.Prim.*## x2 y2)) y3
+                          } in
+                          $wgo2 ys (GHC.Prim.+## ww (GHC.Prim.*## x3 x3)) } } } } } } }
+                 } in
+                 case $wgo2 w1 0.0 of ww { DEFAULT ->
+                 case GHC.List.$wlenAcc
+                        @ Week1.CostFunction.TrainingSet
+                        w1
+                        0 of ww2 { DEFAULT ->
+                 GHC.Prim./##
+                   ww
+                   (GHC.Prim.+##
+                      (GHC.Prim.int2Double# ww2)
+                      (GHC.Prim.int2Double# ww2)) } }) -}
+29945b6d19d806e2ccb2cbe7567914c2
+  $wgo :: System.Random.StdGen -> GHC.Prim.Int# -> [GHC.Types.Double]
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+b37b1242bb52af64cd065e01b5e8f328
+  $wgo1 ::
+    System.Random.StdGen
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Double]
+    -> [Week1.CostFunction.TrainingSet]
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+c6832a8b1e1b7661049a2b1406ab5238
+  $wgradientDescent ::
+    GHC.Prim.Double#
+    -> GHC.Types.Double
+    -> [Week1.CostFunction.TrainingSet]
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> (# GHC.Types.Double, GHC.Types.Double #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U><L,U(U)><S,U><L,U(U)><L,U(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Double#
+                   w :: GHC.Types.Double
+                   w1 :: [Week1.CostFunction.TrainingSet]
+                   ww1 :: GHC.Types.Double
+                   ww2 :: GHC.Types.Double ->
+                 let {
+                   lvl7 :: GHC.Types.Bool
+                   = GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.>## ww 0.0)
+                 } in
+                 letrec {
+                   $winGD :: GHC.Types.Double
+                             -> GHC.Types.Double -> (# GHC.Types.Double, GHC.Types.Double #)
+                     {- Arity: 2, Strictness: <L,U(U)><L,U(U)>, Inline: [0] -}
+                   = \ ww3 :: GHC.Types.Double ww4 :: GHC.Types.Double ->
+                     case Week1.CostFunction.$werrorf
+                            (Week1.CostFunction.Parameter ww3 ww4)
+                            w1 of ww5 { DEFAULT ->
+                     let {
+                       up :: Week1.CostFunction.Parameter
+                       = case Week1.CostFunction.$wdescentOne
+                                w
+                                w1
+                                ww3
+                                ww4 of ww6 { (#,#) ww7 ww8 ->
+                         Week1.CostFunction.Parameter ww7 ww8 }
+                     } in
+                     case Week1.CostFunction.$werrorf up w1 of ww6 { DEFAULT ->
+                     case GHC.Prim.-## ww5 ww6 of wild1 {
+                       DEFAULT
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.>## wild1 0.0) of wild2 {
+                            GHC.Types.False
+                            -> case GHC.Prim.tagToEnum#
+                                      @ GHC.Types.Bool
+                                      (GHC.Prim.>## ww (GHC.Prim.negateDouble# wild1)) of wild {
+                                 GHC.Types.False
+                                 -> case up of ww7 { Week1.CostFunction.Parameter ww8 ww9 ->
+                                    $winGD ww8 ww9 }
+                                 GHC.Types.True -> (# ww3, ww4 #) }
+                            GHC.Types.True
+                            -> case GHC.Prim.tagToEnum#
+                                      @ GHC.Types.Bool
+                                      (GHC.Prim.>## ww wild1) of wild {
+                                 GHC.Types.False
+                                 -> case up of ww7 { Week1.CostFunction.Parameter ww8 ww9 ->
+                                    $winGD ww8 ww9 }
+                                 GHC.Types.True -> (# ww3, ww4 #) } }
+                       0.0
+                       -> case lvl7 of wild {
+                            GHC.Types.False
+                            -> case up of ww7 { Week1.CostFunction.Parameter ww8 ww9 ->
+                               $winGD ww8 ww9 }
+                            GHC.Types.True -> (# ww3, ww4 #) } } } }
+                 } in
+                 $winGD ww1 ww2) -}
+6fd3ea58bd3a00febdc9983ed8e3a483
+  data Parameter
+    = Parameter {t0 :: GHC.Types.Double, t1 :: GHC.Types.Double}
+e6634c681696154b65aaeed6259d0881
+  data TrainingSet
+    = TrainingSet {x :: GHC.Types.Double, y :: GHC.Types.Double}
+affea976a84021cb839109be286b44c9
+  composeDataSets ::
+    GHC.Types.Int -> GHC.Types.IO [Week1.CostFunction.TrainingSet]
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Week1.CostFunction.composeDataSets1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <[Week1.CostFunction.TrainingSet]>_R)) -}
+77165d7c3821cd7676469678938afef3
+  composeDataSets1 ::
+    GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [Week1.CostFunction.TrainingSet] #)
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: (\ n :: GHC.Types.Int
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.Random.theStdGen
+                        `cast`
+                      (GHC.IORef.NTCo:IORef[0] <System.Random.StdGen>_N) of wild { GHC.STRef.STRef r# ->
+                 case GHC.Prim.atomicModifyMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ System.Random.StdGen
+                        @ (System.Random.StdGen, System.Random.StdGen)
+                        @ System.Random.StdGen
+                        r#
+                        System.Random.newStdGen2
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of b1 { System.Random.StdGen ipv2 ipv3 ->
+                 case GHC.Prim.atomicModifyMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ System.Random.StdGen
+                        @ (System.Random.StdGen, System.Random.StdGen)
+                        @ System.Random.StdGen
+                        r#
+                        System.Random.newStdGen2
+                        ipv of ds2 { (#,#) ipv4 ipv5 ->
+                 case ipv5 of b2 { System.Random.StdGen ipv6 ipv7 ->
+                 (# ipv4,
+                    case n of wild1 { GHC.Types.I# y1 ->
+                    case GHC.Prim.tagToEnum#
+                           @ GHC.Types.Bool
+                           (GHC.Prim.<# 0 y1) of wild2 {
+                      GHC.Types.False -> GHC.Types.[] @ Week1.CostFunction.TrainingSet
+                      GHC.Types.True
+                      -> Week1.CostFunction.$wgo1
+                           b1
+                           y1
+                           (Week1.CostFunction.$wgo b2 y1) } } #) } } } } }) -}
+8287410c944eea4cc0e696939e1c6822
+  costFunction ::
+    Week1.CostFunction.Parameter
+    -> GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SS),1*U(1*U(U),1*U(U))><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ ds :: Week1.CostFunction.Parameter eta :: GHC.Types.Double ->
+                 case ds of wild { Week1.CostFunction.Parameter t2 t3 ->
+                 case t2 of wild1 { GHC.Types.D# x1 ->
+                 case t3 of wild2 { GHC.Types.D# x2 ->
+                 case eta of wild3 { GHC.Types.D# y1 ->
+                 GHC.Types.D# (GHC.Prim.+## x1 (GHC.Prim.*## x2 y1)) } } } }) -}
+3a6a227fa3e1a0b0b5b3b22e4d4a931e
+  descentOne ::
+    GHC.Types.Double
+    -> [Week1.CostFunction.TrainingSet]
+    -> Week1.CostFunction.Parameter
+    -> Week1.CostFunction.Parameter
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U)><L,U><S,1*U(U(U),U(U))>m, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Double
+                   w1 :: [Week1.CostFunction.TrainingSet]
+                   w2 :: Week1.CostFunction.Parameter ->
+                 case w2 of ww { Week1.CostFunction.Parameter ww1 ww2 ->
+                 case Week1.CostFunction.$wdescentOne
+                        w
+                        w1
+                        ww1
+                        ww2 of ww3 { (#,#) ww4 ww5 ->
+                 Week1.CostFunction.Parameter ww4 ww5 } }) -}
+2b082a455d48112fd23b98778df57a18
+  errorf ::
+    Week1.CostFunction.Parameter
+    -> [Week1.CostFunction.TrainingSet] -> GHC.Types.Double
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U(U),U(U))><S,U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Week1.CostFunction.Parameter
+                   w1 :: [Week1.CostFunction.TrainingSet] ->
+                 case Week1.CostFunction.$werrorf w w1 of ww { DEFAULT ->
+                 GHC.Types.D# ww }) -}
+6676604accc228354fece9fa5c2d0463
+  f :: GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ x1 :: GHC.Types.Double -> x1) -}
+10c094ab564a324c850e03c25e148043
+  gradientDescent ::
+    GHC.Types.Double
+    -> GHC.Types.Double
+    -> [Week1.CostFunction.TrainingSet]
+    -> Week1.CostFunction.Parameter
+    -> Week1.CostFunction.Parameter
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,U(U)><L,U(U)><S,U><S,U(U(U),U(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ w :: GHC.Types.Double
+                   w1 :: GHC.Types.Double
+                   w2 :: [Week1.CostFunction.TrainingSet]
+                   w3 :: Week1.CostFunction.Parameter ->
+                 case w of ww { GHC.Types.D# ww1 ->
+                 case w3 of ww2 { Week1.CostFunction.Parameter ww3 ww4 ->
+                 case Week1.CostFunction.$wgradientDescent
+                        ww1
+                        w1
+                        w2
+                        ww3
+                        ww4 of ww5 { (#,#) ww6 ww7 ->
+                 Week1.CostFunction.Parameter ww6 ww7 } } }) -}
+f7d5ff162e418dff229a8e194f4e9e85
+  t0 :: Week1.CostFunction.Parameter -> GHC.Types.Double
+  RecSel Week1.CostFunction.Parameter
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Week1.CostFunction.Parameter ->
+                 case ds of wild { Week1.CostFunction.Parameter ds1 ds2 -> ds1 }) -}
+2f9a10d2ea751db07706553bbc551c91
+  t1 :: Week1.CostFunction.Parameter -> GHC.Types.Double
+  RecSel Week1.CostFunction.Parameter
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Week1.CostFunction.Parameter ->
+                 case ds of wild { Week1.CostFunction.Parameter ds1 ds2 -> ds2 }) -}
+fd76ae6c38636f7de0de4cc12e87d353
+  x :: Week1.CostFunction.TrainingSet -> GHC.Types.Double
+  RecSel Week1.CostFunction.TrainingSet
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Week1.CostFunction.TrainingSet ->
+                 case ds of wild { Week1.CostFunction.TrainingSet ds1 ds2 ->
+                 ds1 }) -}
+f47c8fbd8a2db45bff6d2ae68d828633
+  y :: Week1.CostFunction.TrainingSet -> GHC.Types.Double
+  RecSel Week1.CostFunction.TrainingSet
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Week1.CostFunction.TrainingSet ->
+                 case ds of wild { Week1.CostFunction.TrainingSet ds1 ds2 ->
+                 ds2 }) -}
+instance GHC.Show.Show [Week1.CostFunction.Parameter]
+  = Week1.CostFunction.$fShowParameter
+instance GHC.Show.Show [Week1.CostFunction.TrainingSet]
+  = Week1.CostFunction.$fShowTrainingSet
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

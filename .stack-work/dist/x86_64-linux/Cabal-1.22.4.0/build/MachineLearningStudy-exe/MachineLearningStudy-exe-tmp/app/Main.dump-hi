@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2016-02-14 00:40:25.543636 UTC
+2016-02-17 01:56:37.620603 UTC
 
 interface main@main:Main 7102
-  interface hash: 05e65e3a62566a3786f29e60dba3e59e
-  ABI hash: 0184ed56c88a48f6c67a0d4787242390
-  export-list hash: cd04dc32a20de8240a470b7097edfa52
+  interface hash: 222755da6911e327dbf067decd7dea3b
+  ABI hash: 97e31aba3e9f410f50a3b7a1476be666
+  export-list hash: 45f32229a0bc7577acd69e07317c9ec9
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 46f05a2d8b21dcc774f0a59b396d5730
   sig of: Nothing
@@ -14,21 +14,21 @@ interface main@main:Main 7102
 exports:
   Main.main
 module dependencies:
-package dependencies: MachineLearningStudy-0.1.0.0@Machi_IgdYCFxeK377V4ARklXMim
+package dependencies: MachineLearningStudy-0.1.0.0@Machi_CNwdqNQ21MrLKFQxwEedkV
                       base-4.8.1.0* ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
 orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
 family instance modules: base-4.8.1.0:Control.Applicative
                          base-4.8.1.0:Data.Either base-4.8.1.0:Data.Monoid
                          base-4.8.1.0:Data.Type.Equality base-4.8.1.0:GHC.Generics
-import  -/  MachineLearningStudy-0.1.0.0@Machi_IgdYCFxeK377V4ARklXMim:Lib 44d995645161235d6b91408e51df56a4
+import  -/  MachineLearningStudy-0.1.0.0@Machi_CNwdqNQ21MrLKFQxwEedkV:Lib 7d741458eff0abfd3d6341b76eb8bc56
 import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-5d3c3a81746ba47a808ef971eafdff7d
+e4969ee5a20168fc0f106bb14c26cff7
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Lib.someFunc1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-6cd6e0cc7223ff5917731611f4cccd9b
+4f906498f41fb66a6ee3e212fdff7936
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
