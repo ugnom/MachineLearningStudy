@@ -18,6 +18,7 @@ library
   exposed-modules:     Lib
                      , Week1.CostFunction
                      , Week2.MoreCostFunction
+                     , Week3.LogisticRegression
   build-depends:       base >= 4.7 && < 5
                      , vector
                      , matrix
